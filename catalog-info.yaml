@@ -10,7 +10,7 @@ metadata:
   labels:
     app: sample-blog
   annotations:
-    backstage.io/kubernetes-labal-selector: 'app=sample-blog'
+    backstage.io/kubernetes-label-selector: 'app=sample-blog'
     backstage.io/kubernetes-namespace: sample-blog
 spec:
   type: website
