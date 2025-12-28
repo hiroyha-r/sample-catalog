@@ -2,7 +2,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: sample-blog
-  description: デモンストレーション用のサービスです
+  description: |
+    デモンストレーション用のサービスです。
+    [利用方法]
+    Catalog - Self-service - Import an existing Git repository をクリックし、
+    URL に https://github.com/hiroyha-r/sample-catalog/blob/main/catalog-info.yaml を入力。
   labels:
     app: sample-blog
   annotations:
