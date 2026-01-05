@@ -21,6 +21,7 @@ spec:
           "ui:options":
             catalogFilter:
             - kind: component
+              metadata.namespace: internal-systems
   steps:
     - id: fetch
       name: fetch entity
