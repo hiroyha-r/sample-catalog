@@ -22,6 +22,8 @@ spec:
             catalogFilter:
             - kind: component
               metadata.namespace: internal-systems
+            - kind: component
+              metadata.namespace: external-systems
   steps:
     - id: fetch
       name: fetch entity
