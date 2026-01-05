@@ -6,7 +6,7 @@ metadata:
   title: Template1
   description: Template 1
 spec:
-  owner: 
+  owner: user:default/hiroyha-r
   type: service
 
   parameters:
