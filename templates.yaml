@@ -1,0 +1,43 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template1
+  namespace: 
+  title: Template1
+  description: Template 1
+spec:
+  owner: 
+  type: service
+
+  parameters:
+    - title: input1
+      required:
+        - ownEntity
+      properties:
+        ownEntity:
+          title: target
+          type: string
+          "ui:field": OwnedEntityPicker
+          "ui:options":
+            catalogFilter:
+              - kind: component
+                metadata.namespace: external-system
+              - kind: component
+                metadata.namespace: internal-system
+  steps:
+    - id: fetch
+      name: fetch entity
+      action: catalog:fetch
+      input:
+        entityRef: ${{ parameters.ownEntity }}
+    - id: debug
+      name: debug
+      action: debug:log
+      input:
+        message: ${{ steps.fetch.output.entity.metadata.name }}
+
+  output:
+    text:
+      - title: Information
+        content: |
+          ${{ steps.fetch.output.entity.metadata.name }}
