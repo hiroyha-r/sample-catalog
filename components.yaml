@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petstore1
+  namespace: external-systems
+  description: Petstore 1
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/hiroyha-r
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petstore2
+  namespace: internal-systems
+  description: Petstore 2
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/hiroyha-r
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
+
