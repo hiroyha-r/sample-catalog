@@ -18,10 +18,6 @@ spec:
           title: target
           type: string
           "ui:field": OwnedEntityPicker
-          "ui:options":
-            catalogFilter:
-              - kind: component
-                metadata.namespace: external-system
   steps:
     - id: fetch
       name: fetch entity
