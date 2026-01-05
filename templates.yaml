@@ -20,6 +20,7 @@ spec:
           "ui:field": OwnedEntityPicker
           "ui:options":
             - kind: component
+              metadata.namespace: external-systems
   steps:
     - id: fetch
       name: fetch entity
