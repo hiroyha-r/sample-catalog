@@ -19,7 +19,7 @@ spec:
           type: string
           "ui:field": OwnedEntityPicker
           "ui:options":
-            - king: component
+            - kind: component
   steps:
     - id: fetch
       name: fetch entity
