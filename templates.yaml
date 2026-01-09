@@ -24,6 +24,10 @@ spec:
               metadata.namespace: internal-systems
             - kind: component
               metadata.namespace: external-systems
+            - kind: component
+              metadata.namespace: systems3
+            - kind: component
+              metadata.namespace: systems4
   steps:
     - id: fetch
       name: fetch entity

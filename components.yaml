@@ -27,4 +27,49 @@ spec:
     - petstore
     - internal/streetlights
     - hello-world
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petstore3
+  namespace: systems3
+  description: Petstore 3
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/hiroyha-r
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petstore4
+  namespace: systems4
+  description: Petstore 4
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/hiroyha-r
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petstore5
+  namespace: systems5
+  description: Petstore 5
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/hiroyha-r
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
 
