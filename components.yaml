@@ -7,7 +7,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:default/hiroyha-r
+  owner: user:default/bkuser1
   providesApis:
     - petstore
     - internal/streetlights
@@ -22,7 +22,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:default/hiroyha-r
+  owner: user:default/bkuser1
   providesApis:
     - petstore
     - internal/streetlights
@@ -37,7 +37,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:default/hiroyha-r
+  owner: user:default/bkuser1
   providesApis:
     - petstore
     - internal/streetlights
@@ -52,7 +52,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:default/hiroyha-r
+  owner: user:default/bkuser1
   providesApis:
     - petstore
     - internal/streetlights
@@ -67,7 +67,22 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:default/hiroyha-r
+  owner: user:default/bkuser1
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petstore6
+  namespace: systems6
+  description: Petstore 6
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/bkuser1
   providesApis:
     - petstore
     - internal/streetlights
