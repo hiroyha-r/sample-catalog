@@ -1,0 +1,35 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template2
+  namespace: templates2
+  title: Template2
+  description: Template 2
+spec:
+  owner: user:default/bkuser1
+  type: service
+
+  parameters:
+    - title: input1
+      required:
+        - appId
+      properties:
+        appId:
+          title: target
+          type: string
+          "ui:field": OwnerPicker
+          "ui:options":
+            allowedKinds:
+              - Group
+  steps:
+    - id: debug
+      name: debug
+      action: debug:log
+      input:
+        message: ${{ parameters.appId }}
+
+  output:
+    text:
+      - title: Information
+        content: |
+          ${{ parameters.appId }}
