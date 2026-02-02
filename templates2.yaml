@@ -13,8 +13,16 @@ spec:
     - title: input1
       required:
         - appId
+        - appId2
       properties:
         appId:
+          title: target
+          type: string
+          "ui:field": OwnerPicker
+          "ui:options":
+            allowedKinds:
+              - Group
+        appId2:
           title: target
           type: string
           "ui:field": OwnerPicker
@@ -26,10 +34,10 @@ spec:
       name: debug
       action: debug:log
       input:
-        message: ${{ parameters.appId }}
+        message: ${{ parameters.appId }} ${{ parameters.appId2 }}
 
   output:
     text:
       - title: Information
         content: |
-          ${{ parameters.appId }}
+          ${{ parameters.appId }} ${{ parameteres.appId2 }}
