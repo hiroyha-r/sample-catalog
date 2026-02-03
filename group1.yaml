@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: localgroup1
+  description: Local Group 1
+spec:
+  type: team
+  children: []
