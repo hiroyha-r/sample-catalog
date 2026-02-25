@@ -7,7 +7,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:default/Admin
+  owner: group:default/Admin
   providesApis:
     - petstore
     - internal/streetlights
@@ -22,7 +22,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:default/Admin
+  owner: group:default/Admin
   providesApis:
     - petstore
     - internal/streetlights
@@ -37,7 +37,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:default/team1
+  owner: group:default/team1
   providesApis:
     - petstore
     - internal/streetlights
@@ -52,7 +52,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:default/team1
+  owner: group:default/team1
   providesApis:
     - petstore
     - internal/streetlights
@@ -67,7 +67,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:default/team2
+  owner: group:default/team2
   providesApis:
     - petstore
     - internal/streetlights
@@ -82,7 +82,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:default/team3
+  owner: group:default/team3
   providesApis:
     - petstore
     - internal/streetlights
