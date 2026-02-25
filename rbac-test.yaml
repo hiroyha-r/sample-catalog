@@ -1,0 +1,90 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petstore1
+  namespace: external-systems
+  description: Petstore 1
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/Admin
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petstore2
+  namespace: internal-systems
+  description: Petstore 2
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/Admin
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petstore3
+  namespace: systems3
+  description: Petstore 3
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/team1
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petstore4
+  namespace: systems4
+  description: Petstore 4
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/team1
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petstore5
+  namespace: systems5
+  description: Petstore 5
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/team2
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petstore6
+  namespace: systems6
+  description: Petstore 6
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/team3
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
+
