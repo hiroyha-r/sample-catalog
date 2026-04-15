@@ -1,0 +1,3 @@
+site_name: Sample Document 1
+plugins:
+  - techdocs-core

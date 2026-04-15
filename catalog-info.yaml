@@ -20,10 +20,26 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: sample-techdocs
-  description: TechDocsインポート用のサンプル
+  name: sample-techdocs-1
+  description: 'TechDocs Sample #1'
   annotations:
-    backstage.io/techdocs-ref: dir:.
+    backstage.io/techdocs-ref: dir:./docs1
+  labels:
+    isPublic: true
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/bkuser1
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sample-techdocs-2
+  description: 'TechDocs Sample #2'
+  annotations:
+    backstage.io/techdocs-ref: dir:./docs2
+  labels:
+    ispublic: true
 spec:
   type: service
   lifecycle: experimental
