@@ -44,3 +44,17 @@ spec:
   type: service
   lifecycle: experimental
   owner: user:default/bkuser1
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sample-techdocs-3
+  description: 'TechDocs Sample #3'
+  annotations:
+    backstage.io/techdocs-ref: dir:./docs3
+  labels:
+    isPrivate: "true"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/bkuser1
