@@ -25,7 +25,7 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: dir:./docs1
   labels:
-    isPublic: true
+    isPublic: "true"
 spec:
   type: service
   lifecycle: experimental
@@ -39,7 +39,7 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: dir:./docs2
   labels:
-    ispublic: true
+    ispublic: "true"
 spec:
   type: service
   lifecycle: experimental
