@@ -16,3 +16,15 @@ spec:
   type: website
   owner: user:default/bkuser1
   lifecycle: production
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sample-techdocs
+  description: TechDocsインポート用のサンプル
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/bkuser1

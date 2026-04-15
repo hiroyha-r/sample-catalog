@@ -1,0 +1,3 @@
+site_name: サンプルドキュメント
+plugins:
+  - techdocs-core
